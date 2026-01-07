@@ -5,7 +5,7 @@
 
 /* Page Header */
 .pastel-page-header {
-  background: linear-gradient(194deg, var(--color-light-blue) 15%, var(--color-white) 34%);
+  background: var(--color-white);
   border-radius: var(--radius-lg);
   padding: 0 var(--spacing-md) var(--spacing-md) var(--spacing-md);
   margin-bottom: var(--spacing-lg);
