@@ -18,7 +18,7 @@ A modern, beautiful MediaWiki skin featuring soft pastel colors inspired by cont
 1. Download or clone this repository to your MediaWiki `skins/` directory:
    ```bash
    cd /path/to/mediawiki/skins/
-   git clone https://github.com/yourusername/mediawiki-skin-pastel.git Pastel
+   git clone https://github.com/tuna0917/mediawiki-skin-pastel.git Pastel
    ```
 
 2. Add the following line to your `LocalSettings.php`:
@@ -31,7 +31,20 @@ A modern, beautiful MediaWiki skin featuring soft pastel colors inspired by cont
    $wgDefaultSkin = 'pastel';
    ```
 
-4. Navigate to Special:Preferences in your wiki to select the skin for your user account.
+4. Set Pastel Logo (optional):
+   ```php
+   $wgLogos = [
+      '1x' => "$wgResourceBasePath/skins/Pastel/resources/images/pastel-logo.png",
+      'wordmark' => [
+         'src' => "$wgResourceBasePath/skins/Pastel/resources/images/pastel-logo.png",
+         'width' => 150,
+         'height' => 50,
+      ],
+      'icon' => "$wgResourceBasePath/skins/Pastel/resources/images/pastel-logo.png",
+   ];
+   ```
+
+5. Navigate to Special:Preferences in your wiki to select the skin for your user account.
 
 ## Requirements
 
