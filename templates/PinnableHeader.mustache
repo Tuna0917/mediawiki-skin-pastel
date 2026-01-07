@@ -1,0 +1,17 @@
+<div class="pastel-pinnable-header {{#is-pinned}}pastel-pinnable-header-pinned{{/is-pinned}}{{^is-pinned}}pastel-pinnable-header-unpinned{{/is-pinned}}"
+     data-feature-name="{{data-feature-name}}"
+     data-pinnable-element-id="{{data-pinnable-element-id}}"
+     data-pinned-container-id="{{data-pinned-container-id}}"
+     data-unpinned-container-id="{{data-unpinned-container-id}}">
+
+	<{{label-tag-name}} class="pastel-pinnable-header-label">
+		{{label}}
+	</{{label-tag-name}}>
+
+	<button class="pastel-pinnable-header-toggle"
+	        aria-label="{{#is-pinned}}{{unpin-label}}{{/is-pinned}}{{^is-pinned}}{{pin-label}}{{/is-pinned}}">
+		<span class="pastel-pinnable-header-toggle-icon">
+			{{#is-pinned}}&#128204;{{/is-pinned}}{{^is-pinned}}&#128205;{{/is-pinned}}
+		</span>
+	</button>
+</div>

@@ -1,0 +1,114 @@
+{
+	"name": "Pastel",
+	"version": "2.0.0",
+	"author": ["Pastel Contributors"],
+	"url": "https://www.mediawiki.org/wiki/Skin:Pastel",
+	"descriptionmsg": "pastel-skin-desc",
+	"namemsg": "skinname-pastel",
+	"license-name": "GPL-2.0-or-later",
+	"type": "skin",
+	"requires": {
+		"MediaWiki": ">= 1.39.0"
+	},
+	"ValidSkinNames": {
+		"pastel": {
+			"class": "MediaWiki\\Skins\\Pastel\\SkinPastel",
+			"args": [
+				{
+					"name": "pastel",
+					"templateDirectory": "templates/",
+					"template": "skin",
+					"responsive": true,
+					"clientPrefEnabled": true,
+					"toc": false,
+					"link": {
+						"text-wrapper": {
+							"tag": "span"
+						}
+					},
+					"scripts": [
+						"skins.pastel.js"
+					],
+					"styles": [
+						"skins.pastel.styles"
+					],
+					"messages": [
+						"pastel-toc-label",
+						"pastel-toc-toggle-button-label",
+						"pastel-main-menu-label",
+						"pastel-page-tools-label",
+						"pastel-pin-element-label",
+						"pastel-unpin-element-label"
+					]
+				}
+			]
+		}
+	},
+	"MessagesDirs": {
+		"Pastel": [
+			"i18n"
+		]
+	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Skins\\Pastel\\": "includes/"
+	},
+	"config": {
+		"PastelTableOfContentsCollapseAtCount": {
+			"value": 3,
+			"description": "Minimum number of sections required to show collapsible table of contents"
+		},
+		"PastelResponsive": {
+			"value": true,
+			"description": "Enable responsive design features"
+		}
+	},
+	"ServiceWiringFiles": [
+		"ServiceWiring.php"
+	],
+	"HookHandlers": {
+		"sidebar": {
+			"class": "MediaWiki\\Skins\\Pastel\\Hooks\\SidebarHooks"
+		}
+	},
+	"Hooks": {
+		"SkinBuildSidebar": "sidebar"
+	},
+	"ResourceModules": {
+		"skins.pastel.styles": {
+			"class": "MediaWiki\\ResourceLoader\\SkinModule",
+			"features": {
+				"normalize": true,
+				"elements": true,
+				"content": true,
+				"interface": true,
+				"logo": true,
+				"toc": false
+			},
+			"styles": [
+				"resources/styles/variables.css",
+				"resources/styles/layout.css",
+				"resources/styles/header.css",
+				"resources/styles/sidebar.css",
+				"resources/styles/content.css",
+				"resources/styles/footer.css",
+				"resources/styles/search.css"
+			]
+		},
+		"skins.pastel.js": {
+			"packageFiles": [
+				"resources/js/skin.js",
+				"resources/js/features.js",
+				"resources/js/pinnableElement.js"
+			],
+			"dependencies": [
+				"mediawiki.util",
+				"mediawiki.api"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "Pastel"
+	},
+	"manifest_version": 2
+}

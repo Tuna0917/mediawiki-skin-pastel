@@ -1,0 +1,149 @@
+.pastel-sidebar {
+  width: var(--sidebar-width);
+  flex-shrink: 0;
+}
+
+.pastel-navigation,
+.pastel-toolbox {
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Main Menu and Portlets */
+.pastel-main-menu {
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.pastel-portlet {
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.pastel-portlet:last-child {
+  border-bottom: none;
+}
+
+/* Recent changes portlet - special styling */
+.pastel-portlet.p-recent-changes {
+  background: linear-gradient(135deg, rgba(197, 232, 247, 0.2) 0%, rgba(184, 233, 212, 0.2) 100%);
+}
+
+.pastel-portlet-heading {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0 0 var(--spacing-sm) 0;
+  padding-bottom: var(--spacing-xs);
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.pastel-portlet-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pastel-portlet-item {
+  margin-bottom: var(--spacing-xs);
+}
+
+.pastel-portlet-link {
+  display: block;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  color: var(--color-text);
+  transition: all var(--transition-fast);
+  font-size: var(--font-size-sm);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pastel-portlet-link:hover {
+  background-color: var(--color-bg-hover);
+  color: var(--color-link);
+  transform: translateX(4px);
+}
+
+/* 최근 변경사항 특별 스타일 */
+.p-recent-changes .pastel-portlet-link {
+  white-space: normal;
+  padding: var(--spacing-sm);
+  background-color: var(--color-white);
+  line-height: 1.5;
+  display: block;
+  border-bottom: 1px solid var(--color-border-light);
+  transition: all var(--transition-fast);
+}
+
+.p-recent-changes .pastel-portlet-link:hover {
+  background-color: var(--color-bg-hover);
+  padding-left: calc(var(--spacing-sm) + 4px);
+}
+
+.p-recent-changes .pastel-portlet-item {
+  margin-bottom: 0;
+}
+
+.p-recent-changes .pastel-portlet-item:first-child .pastel-portlet-link {
+  border-top: 1px solid var(--color-border-light);
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+}
+
+.p-recent-changes .pastel-portlet-item:last-child .pastel-portlet-link {
+  border-bottom: 1px solid var(--color-border-light);
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+}
+
+.pastel-nav-heading,
+.pastel-toolbox-heading {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0 0 var(--spacing-md) 0;
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.pastel-nav-list,
+.pastel-toolbox-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pastel-nav-item,
+.pastel-toolbox-item {
+  margin-bottom: var(--spacing-xs);
+}
+
+.pastel-nav-link,
+.pastel-toolbox-link {
+  display: block;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  color: var(--color-text);
+  transition: all var(--transition-fast);
+  font-size: var(--font-size-base);
+}
+
+.pastel-nav-link:hover,
+.pastel-toolbox-link:hover {
+  background-color: var(--color-bg-hover);
+  color: var(--color-link);
+  transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+  .pastel-sidebar {
+    width: 100%;
+  }
+}

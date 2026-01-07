@@ -1,0 +1,24 @@
+<div id="{{id}}" class="pastel-toc {{#is-pinned}}pastel-toc-pinned{{/is-pinned}}{{^is-pinned}}pastel-toc-unpinned{{/is-pinned}}">
+	{{#data-pinnable-header}}
+		{{>PinnableHeader}}
+	{{/data-pinnable-header}}
+
+	<nav class="pastel-toc-nav" aria-labelledby="pastel-toc-label">
+		<ul class="pastel-toc-list">
+			{{#array-sections}}
+			<li class="pastel-toc-item pastel-toc-level-{{toclevel}} {{#is-top-level-section}}pastel-toc-top-level{{/is-top-level-section}}">
+				<a href="#{{anchor}}" class="pastel-toc-link">
+					<span class="pastel-toc-number">{{number}}</span>
+					<span class="pastel-toc-text">{{{line}}}</span>
+				</a>
+				{{#is-parent-section}}
+				<button class="pastel-toc-toggle"
+				        aria-label="{{pastel-button-label}}">
+					<span class="pastel-toc-toggle-icon">&#9660;</span>
+				</button>
+				{{/is-parent-section}}
+			</li>
+			{{/array-sections}}
+		</ul>
+	</nav>
+</div>

@@ -1,0 +1,18 @@
+<div id="{{id}}" class="pastel-main-menu">
+	<nav class="pastel-main-menu-nav">
+		{{#data-portlets}}
+			<div class="pastel-portlet {{id}}">
+				<h3 class="pastel-portlet-heading">{{{label}}}</h3>
+				<ul class="pastel-portlet-list">
+					{{#array-items}}
+					<li class="pastel-portlet-item {{class}}">
+						<a href="{{href}}" class="pastel-portlet-link">
+							{{{html}}}
+						</a>
+					</li>
+					{{/array-items}}
+				</ul>
+			</div>
+		{{/data-portlets}}
+	</nav>
+</div>

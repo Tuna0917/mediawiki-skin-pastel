@@ -1,0 +1,16 @@
+<div id="{{id}}" class="pastel-page-tools {{#is-pinned}}pastel-page-tools-pinned{{/is-pinned}}{{^is-pinned}}pastel-page-tools-unpinned{{/is-pinned}}">
+	{{#data-pinnable-header}}
+		{{>PinnableHeader}}
+	{{/data-pinnable-header}}
+
+	<div class="pastel-page-tools-list">
+		{{#array-tools}}
+		<a href="{{href}}" class="pastel-tool-link {{class}}" {{#id}}id="{{id}}"{{/id}}>
+			{{#icon}}
+				<span class="pastel-tool-icon">{{icon}}</span>
+			{{/icon}}
+			<span class="pastel-tool-text">{{text}}</span>
+		</a>
+		{{/array-tools}}
+	</div>
+</div>

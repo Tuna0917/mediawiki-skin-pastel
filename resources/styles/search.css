@@ -1,0 +1,286 @@
+/**
+ * Search page styles for Pastel skin
+ */
+
+/* Search page container */
+.mw-special-Search {
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 var(--spacing-lg) !important;
+}
+
+.mw-special-Search .mw-body-content {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+}
+
+/* Hide subtitle in search results page */
+.mw-special-Search .pastel-subtitle {
+  display: none !important;
+}
+
+/* Search profile tabs - redesigned as standalone navigation */
+.mw-search-profile-tabs {
+  border: none !important;
+  background: transparent !important;
+  /* margin-bottom: var(--spacing-lg) !important; */
+  margin-top: 0 !important;
+  padding: 0 !important;
+  text-align: center !important;
+  width: 100% !important;
+  max-width: none !important;
+}
+
+.mw-search-profile-tabs .search-types {
+  display: inline-flex !important;
+  gap: var(--spacing-xs) !important;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+.mw-search-profile-tabs .search-types li {
+  margin: 0 !important;
+  background: transparent !important;
+}
+
+.mw-search-profile-tabs .search-types li a {
+  display: block !important;
+  padding: var(--spacing-sm) var(--spacing-lg) !important;
+  text-decoration: none !important;
+  color: var(--color-text) !important;
+  font-weight: 500 !important;
+  border-radius: var(--radius-full) !important;
+  background-color: var(--color-white) !important;
+  transition: all var(--transition-fast) !important;
+  border: 2px solid var(--color-border) !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+
+.mw-search-profile-tabs .search-types li a:hover {
+  background-color: var(--color-light-blue) !important;
+  color: var(--color-text) !important;
+  border-color: var(--color-primary) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: var(--shadow-md) !important;
+}
+
+.mw-search-profile-tabs .search-types li.current a,
+.mw-search-profile-tabs .search-types li.selected a {
+  background: linear-gradient(135deg, var(--color-light-blue) 0%, var(--color-mint-green) 100%) !important;
+  color: var(--color-text) !important;
+  font-weight: 600 !important;
+  border: 2px solid var(--color-primary) !important;
+  box-shadow: var(--shadow-md) !important;
+}
+
+/* Search results */
+.mw-search-results-container {
+  padding: var(--spacing-md) 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.mw-search-result {
+  padding: var(--spacing-md) !important;
+  margin-bottom: var(--spacing-md) !important;
+  border-radius: var(--radius-md) !important;
+  background-color: var(--color-white) !important;
+  border: 1px solid var(--color-border) !important;
+  transition: all var(--transition-fast) !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.mw-search-result:hover {
+  background-color: var(--color-light-gray);
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.mw-search-result-heading {
+  margin: 0 0 var(--spacing-sm) 0;
+  font-size: var(--font-size-lg);
+}
+
+.mw-search-result-heading a {
+  color: var(--color-link);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.mw-search-result-heading a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.searchresult {
+  color: var(--color-dark-gray);
+  line-height: 1.6;
+}
+
+.mw-search-results-info {
+  width: 100% !important;
+}
+
+/* Search form on special page */
+.mw-search-form-wrapper {
+  margin-bottom: 0 !important;
+  padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-sm) var(--spacing-lg) !important;
+  background: linear-gradient(135deg, rgba(197, 232, 247, 0.3) 0%, rgba(184, 233, 212, 0.3) 100%) !important;
+  border-radius: var(--radius-md) !important;
+  border: 2px solid var(--color-light-blue) !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+
+.mw-search-form {
+  display: flex !important;
+  gap: var(--spacing-sm) !important;
+  align-items: center !important;
+}
+
+.mw-search-form input[type="search"] {
+  flex: 1 !important;
+  padding: var(--spacing-sm) var(--spacing-md) !important;
+  border: 2px solid var(--color-white) !important;
+  border-radius: var(--radius-full) !important;
+  font-size: var(--font-size-base) !important;
+  background-color: var(--color-white) !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+
+.mw-search-form input[type="search"]:focus {
+  outline: none !important;
+  border-color: var(--color-primary) !important;
+  box-shadow: var(--shadow-md) !important;
+}
+
+.mw-search-form button,
+.mw-search-form input[type="submit"],
+.mw-special-Search button[type="submit"],
+.searchButton {
+  padding: var(--spacing-sm) var(--spacing-lg) !important;
+  background-color: var(--color-primary) !important;
+  color: var(--color-white) !important;
+  border: none !important;
+  border-radius: var(--radius-full) !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: all var(--transition-fast) !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+
+.mw-search-form button:hover,
+.mw-search-form input[type="submit"]:hover,
+.mw-special-Search button[type="submit"]:hover,
+.searchButton:hover {
+  background-color: var(--color-sky-blue) !important;
+  transform: scale(1.05) !important;
+  box-shadow: var(--shadow-md) !important;
+}
+
+/* Search info messages */
+.mw-search-nonefound,
+.mw-search-createlink,
+.searchdidyoumean {
+  padding: var(--spacing-md) !important;
+  background-color: var(--color-light-gray) !important;
+  border-left: 4px solid var(--color-primary) !important;
+  border-radius: var(--radius-sm) !important;
+  margin-bottom: var(--spacing-md) !important;
+  color: var(--color-text) !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.searchdidyoumean a {
+  color: var(--color-link) !important;
+  font-weight: 600 !important;
+}
+
+.searchdidyoumean a:hover {
+  color: var(--color-primary) !important;
+}
+
+/* Advanced search options */
+fieldset#mw-searchoptions {
+  padding: var(--spacing-lg) !important;
+  background: linear-gradient(135deg, rgba(197, 232, 247, 0.3) 0%, rgba(184, 233, 212, 0.3) 100%) !important;
+  border-radius: var(--radius-md) !important;
+  border: 2px solid var(--color-light-blue) !important;
+  margin-bottom: var(--spacing-lg) !important;
+}
+
+fieldset#mw-searchoptions legend {
+  display: none !important;
+}
+
+/* Advanced search checkboxes and labels */
+.mw-search-profile-tabs+.mw-search-profile-form,
+.mw-search-profile-form,
+#mw-searchoptions table,
+#mw-searchoptions tbody,
+#mw-searchoptions tr,
+#mw-searchoptions td {
+  background: transparent !important;
+  border: none !important;
+  padding: var(--spacing-xs) var(--spacing-sm) !important;
+}
+
+.mw-search-profile-form {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#mw-searchoptions label {
+  color: var(--color-text) !important;
+  font-weight: 500 !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: var(--spacing-xs) !important;
+  padding: var(--spacing-xs) 0 !important;
+  transition: color var(--transition-fast) !important;
+}
+
+#mw-searchoptions label:hover {
+  color: var(--color-primary) !important;
+}
+
+/* Checkboxes */
+#mw-searchoptions input[type="checkbox"] {
+  width: 1.25rem !important;
+  height: 1.25rem !important;
+  cursor: pointer !important;
+  accent-color: var(--color-primary) !important;
+  border-radius: var(--radius-sm) !important;
+}
+
+/* Advanced search buttons */
+#mw-searchoptions .mw-search-formheader {
+  margin-top: var(--spacing-md) !important;
+  padding-top: var(--spacing-md) !important;
+  border-top: 2px solid var(--color-light-blue) !important;
+  display: flex !important;
+  gap: var(--spacing-sm) !important;
+  align-items: center !important;
+}
+
+#mw-searchoptions select {
+  padding: var(--spacing-xs) var(--spacing-sm) !important;
+  border: 2px solid var(--color-border) !important;
+  border-radius: var(--radius-sm) !important;
+  background-color: var(--color-white) !important;
+  color: var(--color-text) !important;
+  font-size: var(--font-size-base) !important;
+  transition: all var(--transition-fast) !important;
+}
+
+#mw-searchoptions select:focus {
+  outline: none !important;
+  border-color: var(--color-primary) !important;
+  box-shadow: var(--shadow-sm) !important;
+}

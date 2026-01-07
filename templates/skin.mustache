@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="{{html-user-language}}" dir="{{html-user-language-direction}}" {{{html-user-language-attributes}}}>
+<head>
+{{{html-headelement}}}
+</head>
+<body class="{{html-body-classes}}">
+<div class="pastel-wrapper">
+	<header class="pastel-header">
+		<div class="pastel-header-container">
+			<div class="pastel-logo">
+				<a href="{{link-mainpage}}" class="pastel-logo-link">
+					{{#data-logos}}
+						{{#wordmark}}<img src="{{src}}" alt="{{alt}}" class="pastel-logo-image">{{/wordmark}}
+					{{/data-logos}}
+					{{^data-logos.wordmark}}<span class="pastel-logo-text">{{msg-sitetitle}}</span>{{/data-logos.wordmark}}
+				</a>
+			</div>
+			<div class="pastel-header-actions">
+				<a href="/index.php?title=Special:RecentChanges" class="pastel-header-action-button" title="최근 바뀜">
+					<span class="pastel-action-icon cdx-icon-clock"></span>
+					<span class="pastel-action-text">최근 바뀜</span>
+				</a>
+				<a href="/index.php?title=Special:Random" class="pastel-header-action-button" title="임의의 문서">
+					<span class="pastel-action-icon cdx-icon-die"></span>
+					<span class="pastel-action-text">임의 문서</span>
+				</a>
+				<div class="pastel-special-dropdown">
+					<button class="pastel-header-action-button" title="특수 문서">
+						<span class="pastel-action-icon cdx-icon-code"></span>
+						<span class="pastel-action-text">특수</span>
+					</button>
+					<div class="pastel-special-dropdown-menu">
+						<a href="/index.php?title=Special:SpecialPages" class="pastel-special-dropdown-item">
+							<span class="pastel-action-icon cdx-icon-attachment"></span>
+							<span>특수 문서 목록</span>
+						</a>
+						<a href="/index.php?title=Special:Upload" class="pastel-special-dropdown-item">
+							<span class="pastel-action-icon cdx-icon-upload"></span>
+							<span>업로드</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="pastel-search">
+				{{#data-search-box}}
+					<form action="{{form-action}}" class="pastel-search-form">
+						{{{html-input}}}
+						<button type="submit" class="pastel-search-button">검색</button>
+					</form>
+				{{/data-search-box}}
+			</div>
+			<nav class="pastel-user-menu">
+				{{#data-portlets.data-user-menu.array-items}}
+					{{{html}}}
+				{{/data-portlets.data-user-menu.array-items}}
+			</nav>
+		</div>
+	</header>
+
+	<div class="pastel-content-wrapper">
+		<main class="pastel-main" id="content">
+			<article class="pastel-article">
+				<div class="pastel-page-header">
+					<h1 class="pastel-page-title">{{{html-title}}}</h1>
+					{{#data-portlets}}{{#data-views}}
+					<div class="pastel-actions">
+						{{#array-items}}
+						{{{html-item}}}
+						{{/array-items}}
+					</div>
+					{{/data-views}}{{/data-portlets}}
+				</div>
+				{{#html-subtitle}}<div class="pastel-subtitle">{{{.}}}</div>{{/html-subtitle}}
+				{{#html-undelete-link}}<div class="pastel-undelete">{{{.}}}</div>{{/html-undelete-link}}
+				<div class="pastel-body mw-parser-output">
+					{{{html-body-content}}}
+				</div>
+				{{#html-categories}}<div class="pastel-categories">{{{.}}}</div>{{/html-categories}}
+				{{{html-after-content}}}
+			</article>
+		</main>
+
+		<aside class="pastel-sidebar">
+			<div id="pastel-main-menu-pinned-container" class="pastel-pinnable-container">
+				{{#data-main-menu}}{{>MainMenu}}{{/data-main-menu}}
+			</div>
+			<div id="pastel-toc-pinned-container" class="pastel-pinnable-container">
+				{{#data-toc}}{{#is-pinned}}{{>TableOfContents}}{{/is-pinned}}{{/data-toc}}
+			</div>
+			<div id="pastel-page-tools-pinned-container" class="pastel-pinnable-container">
+				{{#data-page-tools}}{{#is-pinned}}{{>PageTools}}{{/is-pinned}}{{/data-page-tools}}
+			</div>
+		</aside>
+	</div>
+
+	<footer class="pastel-footer">
+		<div class="pastel-footer-container">
+			{{#data-footer}}{{{html-items}}}{{/data-footer}}
+		</div>
+	</footer>
+</div>
+{{{html-printtail}}}
+</body>
+</html>

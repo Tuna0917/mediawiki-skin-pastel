@@ -1,0 +1,11 @@
+{
+	"skinname-pastel": "Pastel",
+	"pastel-skin-desc": "A modern, colorful MediaWiki skin with pastel colors inspired by contemporary design trends",
+	"pastel-toc-label": "Contents",
+	"pastel-toc-toggle-button-label": "Toggle $1 subsections",
+	"pastel-main-menu-label": "Main menu",
+	"pastel-page-tools-label": "Page tools",
+	"pastel-pin-element-label": "Pin to sidebar",
+	"pastel-unpin-element-label": "Unpin from sidebar",
+	"recent-changes": "Recent Changes"
+}
