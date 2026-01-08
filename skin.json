@@ -38,7 +38,8 @@
 						"pastel-main-menu-label",
 						"pastel-page-tools-label",
 						"pastel-pin-element-label",
-						"pastel-unpin-element-label"
+						"pastel-unpin-element-label",
+						"pastel-darkmode-toggle"
 					]
 				}
 			]
@@ -68,10 +69,14 @@
 	"HookHandlers": {
 		"sidebar": {
 			"class": "MediaWiki\\Skins\\Pastel\\Hooks\\SidebarHooks"
+		},
+		"theme": {
+			"class": "MediaWiki\\Skins\\Pastel\\Hooks\\ThemeHooks"
 		}
 	},
 	"Hooks": {
-		"SkinBuildSidebar": "sidebar"
+		"SkinBuildSidebar": "sidebar",
+		"BeforePageDisplay": "theme"
 	},
 	"ResourceModules": {
 		"skins.pastel.styles": {
@@ -91,14 +96,16 @@
 				"resources/styles/sidebar.css",
 				"resources/styles/content.css",
 				"resources/styles/footer.css",
-				"resources/styles/search.css"
+				"resources/styles/search.css",
+				"resources/styles/darkmode.css"
 			]
 		},
 		"skins.pastel.js": {
 			"packageFiles": [
 				"resources/js/skin.js",
 				"resources/js/features.js",
-				"resources/js/pinnableElement.js"
+				"resources/js/pinnableElement.js",
+				"resources/js/darkmode.js"
 			],
 			"dependencies": [
 				"mediawiki.util",

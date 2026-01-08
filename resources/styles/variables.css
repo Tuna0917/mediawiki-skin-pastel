@@ -71,3 +71,95 @@
   --transition-fast: 150ms ease-in-out;
   --transition-base: 250ms ease-in-out;
 }
+
+/* Dark Mode - Chrome Incognito Style */
+[data-theme="dark"] {
+  /* Mint accent colors */
+  --color-mint: #5eead4;
+  --color-mint-light: #99f6e4;
+  --color-mint-dark: #2dd4bf;
+
+  /* Primary Colors - Mint accent */
+  --color-primary: var(--color-mint);
+  --color-primary-light: var(--color-mint-light);
+  --color-secondary: var(--color-mint-dark);
+  --color-accent: var(--color-mint);
+
+  /* Chrome Incognito Style Background Colors */
+  --color-bg-dark-1: #202124;
+  --color-bg-dark-2: #292a2d;
+  --color-bg-dark-3: #35363a;
+
+  /* Text Colors - Off-white (not pure white) */
+  --color-white: #e8eaed;
+  --color-light-gray: #292a2d;
+  --color-gray: #35363a;
+  --color-dark-gray: #9aa0a6;
+  --color-text: #e8eaed;
+
+  /* Background Colors */
+  --color-bg-main: var(--color-bg-dark-2);
+  --color-bg-secondary: var(--color-bg-dark-1);
+  --color-bg-hover: var(--color-bg-dark-3);
+
+  /* Border Colors */
+  --color-border: #3c4043;
+  --color-border-light: #5f6368;
+
+  /* Link Colors - Mint themed */
+  --color-link: var(--color-mint);
+  --color-link-visited: #c4b5fd;
+  --color-link-hover: var(--color-mint-light);
+
+  /* Shadows - Subtle */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+
+/* System preference auto-detection */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    /* Mint accent colors */
+    --color-mint: #5eead4;
+    --color-mint-light: #99f6e4;
+    --color-mint-dark: #2dd4bf;
+
+    /* Primary Colors - Mint accent */
+    --color-primary: var(--color-mint);
+    --color-primary-light: var(--color-mint-light);
+    --color-secondary: var(--color-mint-dark);
+    --color-accent: var(--color-mint);
+
+    /* Chrome Incognito Style Background Colors */
+    --color-bg-dark-1: #202124;
+    --color-bg-dark-2: #292a2d;
+    --color-bg-dark-3: #35363a;
+
+    /* Text Colors - Off-white (not pure white) */
+    --color-white: #e8eaed;
+    --color-light-gray: #292a2d;
+    --color-gray: #35363a;
+    --color-dark-gray: #9aa0a6;
+    --color-text: #e8eaed;
+
+    /* Background Colors */
+    --color-bg-main: var(--color-bg-dark-2);
+    --color-bg-secondary: var(--color-bg-dark-1);
+    --color-bg-hover: var(--color-bg-dark-3);
+
+    /* Border Colors */
+    --color-border: #3c4043;
+    --color-border-light: #5f6368;
+
+    /* Link Colors - Mint themed */
+    --color-link: var(--color-mint);
+    --color-link-visited: #c4b5fd;
+    --color-link-hover: var(--color-mint-light);
+
+    /* Shadows - Subtle */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.6);
+  }
+}

@@ -7,5 +7,6 @@
 	"pastel-page-tools-label": "페이지 도구",
 	"pastel-pin-element-label": "사이드바에 고정",
 	"pastel-unpin-element-label": "사이드바에서 고정 해제",
-	"recent-changes": "최근 변경사항"
+	"recent-changes": "최근 변경사항",
+	"pastel-darkmode-toggle": "다크 모드 전환"
 }

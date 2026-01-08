@@ -2,7 +2,7 @@
   background: linear-gradient(135deg, var(--color-mint-green) 0%, var(--color-light-blue) 100%);
   border-top: 3px solid var(--color-secondary);
   margin-top: auto;
-  padding: var(--spacing-xl) 0;
+  padding: var(--spacing-md) 0;
 }
 
 .pastel-footer-container {

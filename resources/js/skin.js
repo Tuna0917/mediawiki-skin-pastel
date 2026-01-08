@@ -3,6 +3,7 @@
  */
 
 const pinnableElement = require( './pinnableElement.js' );
+require( './darkmode.js' );
 
 /**
  * Initialize pinnable elements

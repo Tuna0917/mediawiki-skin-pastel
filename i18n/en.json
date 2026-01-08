@@ -7,5 +7,6 @@
 	"pastel-page-tools-label": "Page tools",
 	"pastel-pin-element-label": "Pin to sidebar",
 	"pastel-unpin-element-label": "Unpin from sidebar",
-	"recent-changes": "Recent Changes"
+	"recent-changes": "Recent Changes",
+	"pastel-darkmode-toggle": "Toggle dark mode"
 }
