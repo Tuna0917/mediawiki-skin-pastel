@@ -587,6 +587,125 @@
   border-top-color: var(--color-border) !important;
 }
 
+/* ==========================================
+   Dark Mode - Recent Changes Page Styles
+   ========================================== */
+/* OOUI Widgets (filters, buttons, dropdowns) */
+[data-theme="dark"] .oo-ui-widget {
+  color: var(--color-text) !important;
+}
+
+[data-theme="dark"] .oo-ui-buttonElement-button,
+[data-theme="dark"] .oo-ui-buttonElement-framed .oo-ui-buttonElement-button {
+  background-color: var(--color-bg-dark-3) !important;
+  border-color: var(--color-mint-dark) !important;
+  color: var(--color-text) !important;
+}
+
+[data-theme="dark"] .oo-ui-buttonElement-button:hover {
+  background-color: var(--color-bg-dark-2) !important;
+  border-color: var(--color-mint) !important;
+}
+
+[data-theme="dark"] .oo-ui-tagMultiselectWidget,
+[data-theme="dark"] .oo-ui-tagMultiselectWidget-handle {
+  background-color: var(--color-bg-dark-3) !important;
+  border-color: var(--color-mint) !important;
+}
+
+[data-theme="dark"] .oo-ui-dropdownWidget .oo-ui-dropdownWidget-handle {
+  background-color: var(--color-bg-dark-3) !important;
+  border-color: var(--color-border) !important;
+  color: var(--color-text) !important;
+}
+
+/* OOUI icons color */
+[data-theme="dark"] .oo-ui-iconElement-icon {
+  filter: invert(85%) sepia(30%) saturate(500%) hue-rotate(115deg) brightness(95%) !important;
+  opacity: 1 !important;
+}
+
+[data-theme="dark"] .oo-ui-indicatorElement-indicator {
+  filter: invert(85%) sepia(30%) saturate(500%) hue-rotate(115deg) brightness(95%) !important;
+  opacity: 1 !important;
+}
+
+[data-theme="dark"] .oo-ui-menuSelectWidget {
+  background-color: var(--color-bg-dark-2) !important;
+  border-color: var(--color-border) !important;
+}
+
+[data-theme="dark"] .oo-ui-menuOptionWidget {
+  color: var(--color-text) !important;
+}
+
+[data-theme="dark"] .oo-ui-menuOptionWidget:hover,
+[data-theme="dark"] .oo-ui-menuOptionWidget-highlighted {
+  background-color: var(--color-bg-dark-3) !important;
+}
+
+[data-theme="dark"] .oo-ui-labelWidget,
+[data-theme="dark"] .oo-ui-labelElement-label {
+  color: var(--color-text) !important;
+}
+
+/* RC Filters specific */
+[data-theme="dark"] .mw-rcfilters-ui-filterTagMultiselectWidget {
+  background-color: var(--color-bg-dark-3) !important;
+}
+
+[data-theme="dark"] .mw-rcfilters-ui-filterTagMultiselectWidget-wrapper-content-title {
+  color: var(--color-text) !important;
+}
+
+[data-theme="dark"] .mw-rcfilters-ui-changesLimitAndDateButtonWidget {
+  background-color: var(--color-bg-dark-3) !important;
+  border-color: var(--color-border) !important;
+}
+
+/* Changes legend box */
+[data-theme="dark"] .mw-changeslist-legend,
+[data-theme="dark"] .mw-recentchanges-legend,
+[data-theme="dark"] fieldset.cloptions {
+  background-color: var(--color-bg-dark-2) !important;
+  border-color: var(--color-mint) !important;
+  color: var(--color-text) !important;
+}
+
+[data-theme="dark"] .mw-changeslist-legend dt,
+[data-theme="dark"] .mw-changeslist-legend dd {
+  color: var(--color-text) !important;
+}
+
+/* Changeslist entries */
+[data-theme="dark"] .mw-changeslist-line,
+[data-theme="dark"] .mw-changeslist-line-inner {
+  background-color: var(--color-bg-dark-2) !important;
+  border-color: var(--color-border) !important;
+  color: var(--color-text) !important;
+}
+
+[data-theme="dark"] .mw-changeslist-line:hover {
+  background-color: var(--color-bg-dark-3) !important;
+}
+
+[data-theme="dark"] .mw-changeslist-date,
+[data-theme="dark"] .mw-changeslist-separator {
+  color: var(--color-dark-gray) !important;
+}
+
+[data-theme="dark"] .mw-plusminus-pos {
+  color: #4ade80 !important;
+}
+
+[data-theme="dark"] .mw-plusminus-neg {
+  color: #f87171 !important;
+}
+
+[data-theme="dark"] .mw-changeslist h4 {
+  color: var(--color-text) !important;
+}
+
 /* System preference auto-detection for toggle button */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .pastel-theme-toggle .icon-sun {
