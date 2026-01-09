@@ -267,7 +267,6 @@
 }
 
 .pastel-body table {
-  width: 100%;
   border-collapse: collapse;
   margin: var(--spacing-lg) 0;
   background-color: var(--color-white);
