@@ -592,6 +592,7 @@
    ========================================== */
 /* OOUI Widgets (filters, buttons, dropdowns) */
 [data-theme="dark"] .oo-ui-widget {
+  background-color: var(--color-bg-dark-2) !important;
   color: var(--color-text) !important;
 }
 
@@ -642,6 +643,107 @@
 [data-theme="dark"] .oo-ui-menuOptionWidget:hover,
 [data-theme="dark"] .oo-ui-menuOptionWidget-highlighted {
   background-color: var(--color-bg-dark-3) !important;
+  color: var(--color-text) !important;
+}
+
+/* OOUI tool/menu hover states */
+[data-theme="dark"] .oo-ui-tool:hover,
+[data-theme="dark"] .oo-ui-tool-active,
+[data-theme="dark"] .oo-ui-tool.oo-ui-widget-enabled:hover {
+  background-color: var(--color-bg-dark-3) !important;
+  color: var(--color-text) !important;
+}
+
+[data-theme="dark"] .oo-ui-tool:hover *,
+[data-theme="dark"] .oo-ui-tool-active *,
+[data-theme="dark"] .oo-ui-tool.oo-ui-widget-enabled:hover * {
+  color: var(--color-text) !important;
+}
+
+[data-theme="dark"] .oo-ui-popupWidget-popup,
+[data-theme="dark"] .oo-ui-selectWidget,
+[data-theme="dark"] .oo-ui-menuSelectWidget,
+[data-theme="dark"] .oo-ui-floatableElement-floatable,
+[data-theme="dark"] .oo-ui-clippableElement-clippable,
+[data-theme="dark"] .oo-ui-menuSelectWidget-menu,
+[data-theme="dark"] .ve-ui-toolbar .oo-ui-widget,
+[data-theme="dark"] .ve-ui-toolbarDialog,
+[data-theme="dark"] .oo-ui-popupWidget-body {
+  background-color: var(--color-bg-dark-2) !important;
+  border-color: var(--color-border) !important;
+  color: var(--color-text) !important;
+}
+
+[data-theme="dark"] .oo-ui-optionWidget,
+[data-theme="dark"] .oo-ui-decoratedOptionWidget,
+[data-theme="dark"] .ve-ui-toolbar .oo-ui-tool {
+  background-color: var(--color-bg-dark-2) !important;
+  color: var(--color-text) !important;
+}
+
+[data-theme="dark"] .oo-ui-optionWidget:hover,
+[data-theme="dark"] .oo-ui-optionWidget-highlighted,
+[data-theme="dark"] .oo-ui-optionWidget-selected,
+[data-theme="dark"] .oo-ui-decoratedOptionWidget:hover,
+html[data-theme="dark"] .oo-ui-optionWidget:hover,
+html[data-theme="dark"] .oo-ui-optionWidget-highlighted,
+html[data-theme="dark"] .oo-ui-tool:hover,
+html[data-theme="dark"] .oo-ui-tool.oo-ui-widget-enabled:hover {
+  background-color: var(--color-bg-dark-3) !important;
+  color: var(--color-text) !important;
+}
+
+html[data-theme="dark"] .oo-ui-tool:hover > .oo-ui-tool-link > .oo-ui-tool-title,
+html[data-theme="dark"] .oo-ui-tool:hover > .oo-ui-tool-link > .oo-ui-iconElement-icon,
+html[data-theme="dark"] .oo-ui-optionWidget:hover > .oo-ui-labelElement-label {
+  background-color: transparent !important;
+  color: var(--color-text) !important;
+}
+
+/* Popup must keep background */
+html[data-theme="dark"] .oo-ui-popupWidget-popup,
+html[data-theme="dark"] .oo-ui-menuSelectWidget,
+html[data-theme="dark"] .oo-ui-selectWidget,
+html[data-theme="dark"] .oo-ui-listToolGroup-tools,
+html[data-theme="dark"] .oo-ui-toolGroup-tools,
+html[data-theme="dark"] .oo-ui-popupToolGroup-tools {
+  background-color: var(--color-bg-dark-2) !important;
+}
+
+html[data-theme="dark"] .oo-ui-listToolGroup-tools .oo-ui-tool,
+html[data-theme="dark"] .oo-ui-toolGroup-tools .oo-ui-tool,
+html[data-theme="dark"] .oo-ui-popupToolGroup-tools .oo-ui-tool,
+html[data-theme="dark"] .oo-ui-listToolGroup-tools .oo-ui-tool-link,
+html[data-theme="dark"] .oo-ui-toolGroup-tools .oo-ui-tool-link,
+html[data-theme="dark"] .oo-ui-popupToolGroup-tools .oo-ui-tool-link {
+  background-color: var(--color-bg-dark-2) !important;
+  color: var(--color-text) !important;
+}
+
+html[data-theme="dark"] .oo-ui-listToolGroup-tools .oo-ui-tool:hover,
+html[data-theme="dark"] .oo-ui-toolGroup-tools .oo-ui-tool:hover,
+html[data-theme="dark"] .oo-ui-popupToolGroup-tools .oo-ui-tool:hover,
+html[data-theme="dark"] .oo-ui-listToolGroup-tools .oo-ui-tool-link:hover,
+html[data-theme="dark"] .oo-ui-toolGroup-tools .oo-ui-tool-link:hover,
+html[data-theme="dark"] .oo-ui-popupToolGroup-tools .oo-ui-tool-link:hover {
+  background-color: var(--color-bg-dark-3) !important;
+}
+
+/* Selected/Active/Pressed states */
+html[data-theme="dark"] .oo-ui-optionWidget-selected,
+html[data-theme="dark"] .oo-ui-optionWidget-pressed,
+html[data-theme="dark"] .oo-ui-tool-active,
+html[data-theme="dark"] .oo-ui-buttonElement-pressed,
+html[data-theme="dark"] .oo-ui-buttonWidget-pressed,
+html[data-theme="dark"] .oo-ui-toggleWidget-on {
+  background-color: var(--color-bg-dark-3) !important;
+  color: var(--color-text) !important;
+}
+
+html[data-theme="dark"] .oo-ui-optionWidget-selected > .oo-ui-labelElement-label,
+html[data-theme="dark"] .oo-ui-optionWidget-pressed > .oo-ui-labelElement-label,
+html[data-theme="dark"] .oo-ui-tool-active > .oo-ui-tool-link > * {
+  color: var(--color-text) !important;
 }
 
 [data-theme="dark"] .oo-ui-labelWidget,
@@ -704,6 +806,152 @@
 
 [data-theme="dark"] .mw-changeslist h4 {
   color: var(--color-text) !important;
+}
+
+/* VisualEditor context menu */
+[data-theme="dark"] .ve-ui-context-menu,
+[data-theme="dark"] .ve-ui-desktopContext-menu {
+  background-color: var(--color-bg-dark-2) !important;
+  border-color: var(--color-border) !important;
+  color: var(--color-text) !important;
+}
+
+[data-theme="dark"] .ve-ui-context-menu *,
+[data-theme="dark"] .ve-ui-desktopContext-menu * {
+  color: var(--color-text) !important;
+}
+
+/* VisualEditor toolbar */
+[data-theme="dark"] .ve-ui-toolbar,
+[data-theme="dark"] .ve-ui-toolbar-bar,
+[data-theme="dark"] .oo-ui-toolbar-bar {
+  background-color: var(--color-bg-dark-2) !important;
+  border-color: var(--color-border) !important;
+}
+
+[data-theme="dark"] .ve-ui-toolbar-group,
+[data-theme="dark"] .oo-ui-toolbar-tools,
+[data-theme="dark"] .oo-ui-toolGroup {
+  background-color: var(--color-bg-dark-2) !important;
+}
+
+[data-theme="dark"] .oo-ui-toolbar-tools .oo-ui-tool-link {
+  background-color: transparent !important;
+}
+
+[data-theme="dark"] .oo-ui-toolbar-tools .oo-ui-tool-link:hover,
+html[data-theme="dark"] .oo-ui-toolbar-tools .oo-ui-tool-link:hover,
+html[data-theme="dark"] .oo-ui-tool:hover .oo-ui-tool-link,
+html[data-theme="dark"] .oo-ui-popupToolGroup:hover,
+html[data-theme="dark"] .oo-ui-toolGroup-tools .oo-ui-tool:hover,
+html[data-theme="dark"] .oo-ui-toolGroup-handle:hover,
+html[data-theme="dark"] .oo-ui-popupToolGroup-handle:hover {
+  background-color: var(--color-bg-dark-3) !important;
+  color: var(--color-text) !important;
+}
+
+html[data-theme="dark"] .oo-ui-tool:hover .oo-ui-tool-link *,
+html[data-theme="dark"] .oo-ui-popupToolGroup:hover *,
+html[data-theme="dark"] .oo-ui-toolGroup-tools .oo-ui-tool:hover *,
+html[data-theme="dark"] .oo-ui-toolGroup-handle:hover *,
+html[data-theme="dark"] .oo-ui-popupToolGroup-handle:hover * {
+  color: var(--color-text) !important;
+}
+
+/* Active/Focus states after click */
+html[data-theme="dark"] .oo-ui-toolGroup-handle:active,
+html[data-theme="dark"] .oo-ui-toolGroup-handle:focus,
+html[data-theme="dark"] .oo-ui-popupToolGroup-handle:active,
+html[data-theme="dark"] .oo-ui-popupToolGroup-handle:focus,
+html[data-theme="dark"] .oo-ui-popupToolGroup-active .oo-ui-popupToolGroup-handle,
+html[data-theme="dark"] .oo-ui-widget-focused,
+html[data-theme="dark"] .oo-ui-tool:active,
+html[data-theme="dark"] .oo-ui-tool:focus {
+  background-color: var(--color-bg-dark-3) !important;
+  color: var(--color-text) !important;
+}
+
+html[data-theme="dark"] .oo-ui-popupToolGroup-active .oo-ui-popupToolGroup-handle *,
+html[data-theme="dark"] .oo-ui-widget-focused * {
+  color: var(--color-text) !important;
+}
+
+[data-theme="dark"] .ve-ui-toolbar-saveButton {
+  background-color: var(--color-mint-dark) !important;
+  color: var(--color-bg-dark-1) !important;
+}
+
+/* VisualEditor dialogs/windows (media, link, etc) */
+html[data-theme="dark"] .oo-ui-window,
+html[data-theme="dark"] .oo-ui-window-frame,
+html[data-theme="dark"] .oo-ui-window-body,
+html[data-theme="dark"] .oo-ui-window-head,
+html[data-theme="dark"] .oo-ui-window-foot,
+html[data-theme="dark"] .oo-ui-dialog,
+html[data-theme="dark"] .oo-ui-processDialog,
+html[data-theme="dark"] .oo-ui-processDialog-content,
+html[data-theme="dark"] .ve-ui-mwMediaDialog,
+html[data-theme="dark"] .ve-ui-mwMediaSearchWidget,
+html[data-theme="dark"] .ve-ui-mwMediaSearchWidget-results,
+html[data-theme="dark"] .oo-ui-panelLayout,
+html[data-theme="dark"] .oo-ui-bookletLayout,
+html[data-theme="dark"] .oo-ui-indexLayout {
+  background-color: var(--color-bg-dark-2) !important;
+  color: var(--color-text) !important;
+}
+
+html[data-theme="dark"] .oo-ui-textInputWidget input,
+html[data-theme="dark"] .oo-ui-textInputWidget textarea,
+html[data-theme="dark"] .oo-ui-searchWidget-query input {
+  background-color: var(--color-bg-dark-1) !important;
+  border-color: var(--color-border) !important;
+  color: var(--color-text) !important;
+}
+
+html[data-theme="dark"] .oo-ui-tabSelectWidget,
+html[data-theme="dark"] .oo-ui-tabOptionWidget {
+  background-color: var(--color-bg-dark-2) !important;
+  color: var(--color-text) !important;
+}
+
+html[data-theme="dark"] .oo-ui-tabOptionWidget.oo-ui-optionWidget-selected {
+  background-color: var(--color-bg-dark-3) !important;
+  border-color: var(--color-mint) !important;
+}
+
+html[data-theme="dark"] .ve-ui-mwMediaResultWidget {
+  background-color: var(--color-bg-dark-3) !important;
+  border-color: var(--color-border) !important;
+}
+
+html[data-theme="dark"] .oo-ui-processDialog-title,
+html[data-theme="dark"] .oo-ui-window-head * {
+  color: var(--color-text) !important;
+}
+
+html[data-theme="dark"] .oo-ui-window a,
+html[data-theme="dark"] .oo-ui-dialog a,
+html[data-theme="dark"] .ve-ui-mwMediaDialog a {
+  color: var(--color-mint) !important;
+}
+
+html[data-theme="dark"] .oo-ui-window a:hover,
+html[data-theme="dark"] .oo-ui-dialog a:hover,
+html[data-theme="dark"] .ve-ui-mwMediaDialog a:hover {
+  color: var(--color-mint-light) !important;
+}
+
+/* Disabled state */
+html[data-theme="dark"] .oo-ui-widget-disabled,
+html[data-theme="dark"] .oo-ui-widget-disabled * {
+  opacity: 0.5 !important;
+  cursor: not-allowed !important;
+  color: var(--color-dark-gray) !important;
+}
+
+html[data-theme="dark"] .oo-ui-widget-disabled .oo-ui-buttonElement-button {
+  background-color: var(--color-bg-dark-1) !important;
+  border-color: var(--color-border) !important;
 }
 
 /* System preference auto-detection for toggle button */
